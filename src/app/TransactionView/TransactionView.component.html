@@ -1,0 +1,28 @@
+<div class="content">
+  <div>
+    <h3 class="tableheaderlist">View Transactions</h3>
+
+    <div>
+      <table
+        border="1 px"
+        style="width: 50%; align-items: center"
+        class="styled-table"
+      >
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of TransactionViewData" class="active-row">
+            <td>{{ item.id }}</td>
+            <td>{{ item.date }}</td>
+            <td>{{ item.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
